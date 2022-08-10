@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  color: black;
+}
+body {
+  background-image: url(P5.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("P5.jpg");
+  font-size: 20px;
+  background-attachment: fixed;
+}
+div.b {
+  text-align: center;
+}
+ul {
+  float: right
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #FFFF66;
+  padding: 5px 20px;
+  border: 1px solid #fff solid transparent;
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: #fff;
+  color: #000000;
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000000;
+}
+.logo img{
+  float: left;
+  width: 150px;
+  height: auto;
+  border: 4px solid red;
+}
+.main {
+  max-width: 3000px;
+  margin: auto;
+}
+
+p {
+  line-height: 50px;
+  text-indent: 20px;
+}
+input[type=submit] {
+    width: 90px;  height: 30px;
+    background-position: center;
+}
+input[type=reset] {
+    width: 90px;  height: 30px;
+    background-position: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  padding: 1px;
+  border: 6px solid #202020;
+  float: right;
+}
+.b {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.e {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer {
+  clear: both;
+  padding: 10px;
+  background-color: #999999;
+  color: white;
+  text-align: right;
+}
+</style>
+<title>Page Title</title>
+</head>
+<body>
+<header>
+<div class="main">
+  <div class= "logo">
+  <img src="5G1.jpg">
+<b><u><section><em> Navigation for all of my webpages</em></section></u></b>
+<nav>
+<ul>
+<u><li><a href="1.html"> Introduction to 5G Network</a></li></u>
+<u><li><a href="2.html"> Benefits of a 5G network</a></li></u>
+<u><li><a href="3.html"> Thoughts on coastal 5G standalone network trials, by
+IMDA, M1, MPA and Airbus</a></li></u>
+<u><li><a href="4.html"> Go to comparison between 4G and 5G</a></li></u>
+<u><li><li class="active"><a href="5.html"> Go to the 5G Network interest form</a></li></u>
+
+</ul>
+</nav>
+</div>
+</header>
+<div class="b">
+<u><h1><em>5G network interest form</h1></u></em>
+</div>
+<div class="e">
+<form align ="left" action="6.html">
+  <p> The picture shown on the right is the previous survey showing what kind of benefits we are getting in 5G network. </p>
+<p>Name:</p> <input id = "first-name-input" name="name-input" type="text" value"" placeholder="Name" size="80" required/>
+<p> Your Age: </p>
+<input type="number" id="K" name="K"
+       min="0" max="300" required/>
+<p>E-mail:</p> <input id = "E-mail-input" name="name-input" type="mail" value"" placeholder="E-mail" size="80" required/>
+<img src="T5.jpg" alt="T5" width="700" height="500">
+<p>Please select your gender:</p>
+<input type="radio" id="male" name="gender" value="male" required/>
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female" required/>
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other" required/>
+<label for="other">Other</label>
+<br>
+<p>Introduce yourself: </p>
+<textarea rows="4" cols="50" placeholder="Describe yourself here..." required/></textarea>
+<br>
+<p>Do you know what 5G is?</p>
+<input type="radio" id="Yes" name="5G" value="Yes" required/>
+<label for="Yes">Yes</label><br>
+<input type="radio" id="No" name="5G" value="No" required/>
+<label for="No">No</label><br>
+<br>
+<p> Choose the following benefits of 5G in order of which ones you believe will have the most positive impact of your lives: (Optional) </p>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">Faster downloads. </label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> Eliminate network issues in crowded areas.</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">Increased capacity for devices like self-driving cars. </label>.
+<br>
+<input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+<label for="vehicle4"> Better work from home experience. </label>
+
+<br>
+<p> When do you expect to have access to 5G ? (Optional) </p>
+<select id="Internet" name="carlist" form="carform" required>
+  <option value="" disabled selected> Please select one</option>
+  <option value="volvo">Already have access</option>
+  <option value="saab">Expect access within 1 year</option>
+  <option value="opel">Expect access 1 year or later</option>
+</select>
+<br>
+<p> Do you think the excitement over 5G is overblown or warranted. </p>
+<input type="radio" id="Warranted" name="overblown1" value="Warranted" required/>
+<label for="Warranted">Warranted</label><br>
+<input type="radio" id="Overblown" name="overblown1" value="Overblown" required/>
+<label for="Overblown">Overblown</label><br>
+<input type="radio" id="Don't know" name="overblown1" value="Don't know" required/>
+<label for="Don't know">Don't know</label><br>
+<br>
+<p> Do you have concerns over 5G network? </p>
+<input type="radio" id="I have concern over using of 5G network." name="Concern1" value="I have concern over using of 5G network." required/>
+<label for="I have concern over using of 5G network.">I have concern over using of 5G network.</label><br>
+<input type="radio" id="I have no concern over using of 5G network." name="Concern1" value="I have no concern over using of 5G network." required/>
+<label for="I have no concern over using of 5G network.">I have no concern over using of 5G network.</label><br>
+<input type="radio" id="Others (Undecided)" name="Concern1" value="Others (Undecided)" required/>
+<label for="Others (Undecided)">Others (Undecided)</label><br>
+<br>
+<p> Do you think 5G network will be positive for the economy? </p>
+<input type="radio" id="Positive" name="Positive1" value="Positive" required>
+<label for="Positive">Positive</label><br>
+<input type="radio" id="Negative" name="Positive1" value="Negative" required>
+<label for="Negative">Negative</label><br>
+<input type="radio" id="Neither positive or negative" name="Positive1" value="Neither positive or negative" required>
+<label for="Neither positive or negative">Neither positive or negative</label>
+<br>
+<input type="radio" id="I do not know the answer." name="Positive1" value="I do not know the answer." required>
+<label for="I do not know the answer.">I do not know the answer.</label>
+<br>
+
+<br>
+<input type="submit" value="Submit">
+<input type="reset" onclick="myFunction()" value="Reset">
+<script>
+function myFunction() {
+  document.getElementById("form1").reset();
+}
+
+</script>
+</div>
+</ul>
+</nav>
+<footer>
+Copyright &copy; By Yong Li (Year:2020)
+</footer>
+</form>
+</body>
+</html>
